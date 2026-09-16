@@ -5,12 +5,8 @@ import (
 	"net/http"
 )
 
-func homeHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Welcome to Gubiter!")
-}
-
 func main() {
-	http.HandleFunc("/", homeHandler)
+	http.Handle("/", http.FileServer(http.Dir("./web")))
 
 	fmt.Println("Gubiter server is running at http://localhost:8080")
 
