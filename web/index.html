@@ -3,13 +3,550 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gubiter</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
+
 <body>
 
-    <h1>Welcome to Gubiter!</h1>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
 
-    <p>This is the beginning of the Gubiter website.</p>
+            <a href="/" class="logo">
+                Gubiter
+            </a>
+
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="#popular">Popular</a>
+                <a href="#creators">Creators</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <!-- Theme Picker -->
+                <div class="theme-picker">
+
+                    <button
+                        id="themeButton"
+                        class="theme-button"
+                        aria-label="Change theme"
+                    >
+                        🎨 Theme
+                    </button>
+
+                    <div id="themeMenu" class="theme-menu">
+
+                        <button
+                            class="theme-option"
+                            data-theme="light"
+                        >
+                            <span class="theme-swatch light-swatch"></span>
+                            Light
+                        </button>
+
+                        <button
+                            class="theme-option"
+                            data-theme="dark"
+                        >
+                            <span class="theme-swatch dark-swatch"></span>
+                            Dark
+                        </button>
+
+                        <button
+                            class="theme-option"
+                            data-theme="brown"
+                        >
+                            <span class="theme-swatch brown-swatch"></span>
+                            Dark Brown
+                        </button>
+
+                        <button
+                            class="theme-option"
+                            data-theme="blue"
+                        >
+                            <span class="theme-swatch blue-swatch"></span>
+                            Dark Blue
+                        </button>
+
+                        <button
+                            class="theme-option"
+                            data-theme="oxblood"
+                        >
+                            <span class="theme-swatch oxblood-swatch"></span>
+                            Dark Oxblood
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="login-btn">
+                    Login
+                </a>
+
+                <a href="#" class="register-btn">
+                    Create Account
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        WELCOME TO GUBITER
+                    </p>
+
+                    <h1>
+                        Discover creators.
+                        <span>Watch what you love.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Explore videos from creators around the world
+                        and discover something new.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#popular"
+                            class="primary-btn"
+                        >
+                            Explore Videos
+                        </a>
+
+                        <a
+                            href="#creators"
+                            class="secondary-btn"
+                        >
+                            Discover Creators
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search videos or creators..."
+                    >
+
+                    <button id="searchButton">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Popular Videos -->
+        <section
+            class="content-section"
+            id="popular"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            EXPLORE
+                        </p>
+
+                        <h2>
+                            Popular Videos
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="#"
+                        class="view-all"
+                    >
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="video-grid">
+
+                    <!-- Video 1 -->
+                    <article class="video-card">
+
+                        <div class="video-thumbnail">
+                            <span class="play-icon">
+                                ▶
+                            </span>
+                        </div>
+
+                        <div class="video-info">
+
+                            <h3>
+                                Featured Video One
+                            </h3>
+
+                            <p class="creator-name">
+                                Creator One
+                            </p>
+
+                            <div class="video-meta">
+
+                                <span>
+                                    12K views
+                                </span>
+
+                                <span>
+                                    •
+                                </span>
+
+                                <span>
+                                    2 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Video 2 -->
+                    <article class="video-card">
+
+                        <div class="video-thumbnail">
+                            <span class="play-icon">
+                                ▶
+                            </span>
+                        </div>
+
+                        <div class="video-info">
+
+                            <h3>
+                                Featured Video Two
+                            </h3>
+
+                            <p class="creator-name">
+                                Creator Two
+                            </p>
+
+                            <div class="video-meta">
+
+                                <span>
+                                    8.4K views
+                                </span>
+
+                                <span>
+                                    •
+                                </span>
+
+                                <span>
+                                    3 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Video 3 -->
+                    <article class="video-card">
+
+                        <div class="video-thumbnail">
+                            <span class="play-icon">
+                                ▶
+                            </span>
+                        </div>
+
+                        <div class="video-info">
+
+                            <h3>
+                                Featured Video Three
+                            </h3>
+
+                            <p class="creator-name">
+                                Creator Three
+                            </p>
+
+                            <div class="video-meta">
+
+                                <span>
+                                    6.1K views
+                                </span>
+
+                                <span>
+                                    •
+                                </span>
+
+                                <span>
+                                    5 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Video 4 -->
+                    <article class="video-card">
+
+                        <div class="video-thumbnail">
+                            <span class="play-icon">
+                                ▶
+                            </span>
+                        </div>
+
+                        <div class="video-info">
+
+                            <h3>
+                                Featured Video Four
+                            </h3>
+
+                            <p class="creator-name">
+                                Creator Four
+                            </p>
+
+                            <div class="video-meta">
+
+                                <span>
+                                    4.8K views
+                                </span>
+
+                                <span>
+                                    •
+                                </span>
+
+                                <span>
+                                    1 week ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Creators -->
+        <section
+            class="creator-section"
+            id="creators"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            COMMUNITY
+                        </p>
+
+                        <h2>
+                            Featured Creators
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="creator-grid">
+
+                    <!-- Creator 1 -->
+                    <div class="creator-card">
+
+                        <div class="creator-avatar">
+                            C1
+                        </div>
+
+                        <h3>
+                            Creator One
+                        </h3>
+
+                        <p>
+                            12.4K followers
+                        </p>
+
+                        <button>
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <!-- Creator 2 -->
+                    <div class="creator-card">
+
+                        <div class="creator-avatar">
+                            C2
+                        </div>
+
+                        <h3>
+                            Creator Two
+                        </h3>
+
+                        <p>
+                            9.8K followers
+                        </p>
+
+                        <button>
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <!-- Creator 3 -->
+                    <div class="creator-card">
+
+                        <div class="creator-avatar">
+                            C3
+                        </div>
+
+                        <h3>
+                            Creator Three
+                        </h3>
+
+                        <p>
+                            7.2K followers
+                        </p>
+
+                        <button>
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <!-- Creator 4 -->
+                    <div class="creator-card">
+
+                        <div class="creator-avatar">
+                            C4
+                        </div>
+
+                        <h3>
+                            Creator Four
+                        </h3>
+
+                        <p>
+                            5.9K followers
+                        </p>
+
+                        <button>
+                            View Profile
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a
+                    href="/"
+                    class="logo"
+                >
+                    Gubiter
+                </a>
+
+                <p>
+                    A platform for discovering creators and videos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container copyright">
+
+            <p>
+                © 2026 Gubiter. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="/static/js/app.js"></script>
 
 </body>
 </html>
