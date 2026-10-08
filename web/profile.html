@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile - Gubiter</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+
+            <a
+                href="/"
+                class="logo"
+            >
+                Gubiter
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="/">
+                    Home
+                </a>
+
+                <a href="/#popular">
+                    Popular
+                </a>
+
+                <a href="/#creators">
+                    Creators
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+
+                <!-- Theme Picker -->
+
+                <div class="theme-picker">
+
+                    <button
+                        id="themeButton"
+                        class="theme-button"
+                        aria-label="Change theme"
+                    >
+                        🎨 Theme
+                    </button>
+
+
+                    <div
+                        id="themeMenu"
+                        class="theme-menu"
+                    >
+
+                        <button
+                            class="theme-option"
+                            data-theme="light"
+                        >
+                            <span
+                                class="theme-swatch light-swatch"
+                            ></span>
+                            Light
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="dark"
+                        >
+                            <span
+                                class="theme-swatch dark-swatch"
+                            ></span>
+                            Dark
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="brown"
+                        >
+                            <span
+                                class="theme-swatch brown-swatch"
+                            ></span>
+                            Dark Brown
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="blue"
+                        >
+                            <span
+                                class="theme-swatch blue-swatch"
+                            ></span>
+                            Dark Blue
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="oxblood"
+                        >
+                            <span
+                                class="theme-swatch oxblood-swatch"
+                            ></span>
+                            Dark Oxblood
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="/login.html"
+                    class="register-btn"
+                >
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         PROFILE
+    =============================== -->
+
+    <main class="profile-page">
+
+        <div class="container">
+
+
+            <!-- Profile Header -->
+
+            <section class="profile-header">
+
+
+                <div class="profile-avatar">
+
+                    <span>
+                        V
+                    </span>
+
+                </div>
+
+
+                <div class="profile-info">
+
+
+                    <div class="profile-title-row">
+
+                        <div>
+
+                            <p class="section-label">
+                                GUBITER MEMBER
+                            </p>
+
+                            <h1>
+                                Mr Vikey
+                            </h1>
+
+                            <p class="profile-username">
+                                @mr_vikey
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="#"
+                            class="profile-edit-btn"
+                        >
+                            Edit Profile
+                        </a>
+
+                    </div>
+
+
+                    <p class="profile-bio">
+
+                        Welcome to my Gubiter profile.
+                        This is where your videos,
+                        activity and creator information
+                        will appear.
+
+                    </p>
+
+
+                    <div class="profile-stats">
+
+
+                        <div class="profile-stat">
+
+                            <strong>
+                                0
+                            </strong>
+
+                            <span>
+                                Videos
+                            </span>
+
+                        </div>
+
+
+                        <div class="profile-stat">
+
+                            <strong>
+                                0
+                            </strong>
+
+                            <span>
+                                Followers
+                            </span>
+
+                        </div>
+
+
+                        <div class="profile-stat">
+
+                            <strong>
+                                0
+                            </strong>
+
+                            <span>
+                                Following
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- Profile Navigation -->
+
+            <div class="profile-tabs">
+
+
+                <button
+                    class="profile-tab active"
+                >
+                    Videos
+                </button>
+
+
+                <button
+                    class="profile-tab"
+                >
+                    Liked
+                </button>
+
+
+                <button
+                    class="profile-tab"
+                >
+                    About
+                </button>
+
+
+            </div>
+
+
+
+            <!-- Videos -->
+
+            <section class="profile-section">
+
+
+                <div class="section-heading">
+
+
+                    <div>
+
+                        <p class="section-label">
+                            YOUR CONTENT
+                        </p>
+
+                        <h2>
+                            Videos
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        href="#"
+                        class="secondary-btn"
+                    >
+                        Upload Video
+                    </a>
+
+
+                </div>
+
+
+
+                <div class="empty-state">
+
+
+                    <div class="empty-icon">
+                        ▶
+                    </div>
+
+
+                    <h3>
+                        No videos yet
+                    </h3>
+
+
+                    <p>
+                        Your uploaded videos will
+                        appear here.
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="primary-btn"
+                    >
+                        Upload Your First Video
+                    </a>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- Account Settings -->
+
+            <section class="profile-section account-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            ACCOUNT
+                        </p>
+
+                        <h2>
+                            Account Settings
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+
+                    <a
+                        href="#"
+                        class="setting-item"
+                    >
+
+                        <div>
+
+                            <strong>
+                                Personal Information
+                            </strong>
+
+                            <span>
+                                Manage your username,
+                                email and profile details.
+                            </span>
+
+                        </div>
+
+                        <span class="setting-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="setting-item"
+                    >
+
+                        <div>
+
+                            <strong>
+                                Privacy
+                            </strong>
+
+                            <span>
+                                Manage your privacy
+                                preferences.
+                            </span>
+
+                        </div>
+
+                        <span class="setting-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="setting-item"
+                    >
+
+                        <div>
+
+                            <strong>
+                                Security
+                            </strong>
+
+                            <span>
+                                Password and account
+                                security settings.
+                            </span>
+
+                        </div>
+
+                        <span class="setting-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="/login.html"
+                        class="setting-item logout-item"
+                    >
+
+                        <div>
+
+                            <strong>
+                                Logout
+                            </strong>
+
+                            <span>
+                                Sign out of your Gubiter
+                                account.
+                            </span>
+
+                        </div>
+
+                        <span class="setting-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="footer">
+
+
+        <div class="container footer-content">
+
+
+            <div>
+
+                <a
+                    href="/"
+                    class="logo"
+                >
+                    Gubiter
+                </a>
+
+
+                <p>
+                    A platform for discovering creators
+                    and videos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="container copyright">
+
+            <p>
+                © 2026 Gubiter.
+                All rights reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="/static/js/app.js"></script>
+
+
+</body>
+
+</html>
