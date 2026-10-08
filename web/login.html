@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login - Gubiter</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+
+            <!-- Logo -->
+
+            <a
+                href="/"
+                class="logo"
+            >
+                Gubiter
+            </a>
+
+
+            <!-- Navigation Links -->
+
+            <nav class="nav-links">
+
+                <a href="/">
+                    Home
+                </a>
+
+                <a href="/#popular">
+                    Popular
+                </a>
+
+                <a href="/#creators">
+                    Creators
+                </a>
+
+            </nav>
+
+
+            <!-- Right Side -->
+
+            <div class="nav-actions">
+
+
+                <!-- Theme Picker -->
+
+                <div class="theme-picker">
+
+                    <button
+                        id="themeButton"
+                        class="theme-button"
+                        aria-label="Change theme"
+                    >
+                        🎨 Theme
+                    </button>
+
+
+                    <div
+                        id="themeMenu"
+                        class="theme-menu"
+                    >
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="light"
+                        >
+
+                            <span
+                                class="theme-swatch light-swatch"
+                            ></span>
+
+                            Light
+
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="dark"
+                        >
+
+                            <span
+                                class="theme-swatch dark-swatch"
+                            ></span>
+
+                            Dark
+
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="brown"
+                        >
+
+                            <span
+                                class="theme-swatch brown-swatch"
+                            ></span>
+
+                            Dark Brown
+
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="blue"
+                        >
+
+                            <span
+                                class="theme-swatch blue-swatch"
+                            ></span>
+
+                            Dark Blue
+
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="oxblood"
+                        >
+
+                            <span
+                                class="theme-swatch oxblood-swatch"
+                            ></span>
+
+                            Dark Oxblood
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- Create Account -->
+
+                <a
+                    href="/register.html"
+                    class="register-btn"
+                >
+                    Create Account
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         LOGIN SECTION
+    =============================== -->
+
+    <main class="auth-page">
+
+
+        <div class="auth-container">
+
+
+            <!-- Header -->
+
+            <div class="auth-header">
+
+                <p class="section-label">
+                    WELCOME BACK
+                </p>
+
+
+                <h1>
+                    Login to Gubiter
+                </h1>
+
+
+                <p>
+                    Sign in to continue to your
+                    Gubiter account.
+                </p>
+
+            </div>
+
+
+
+            <!-- Login Form -->
+
+            <form
+                id="loginForm"
+                class="auth-form"
+            >
+
+
+                <!-- Email / Username -->
+
+                <div class="form-group">
+
+                    <label for="loginIdentifier">
+                        Email or Username
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="loginIdentifier"
+                        name="loginIdentifier"
+                        placeholder="Enter your email or username"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Remember / Forgot -->
+
+                <div class="login-options">
+
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            name="rememberMe"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+
+                    <a
+                        href="#"
+                        class="forgot-link"
+                    >
+                        Forgot password?
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Login
+                </button>
+
+
+
+                <!-- Message -->
+
+                <p
+                    id="loginMessage"
+                    class="form-message"
+                ></p>
+
+
+            </form>
+
+
+
+            <!-- Create Account -->
+
+            <div class="auth-footer">
+
+                <p>
+                    Don't have an account?
+                </p>
+
+
+                <a href="/register.html">
+                    Create Account
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="footer">
+
+
+        <div class="container footer-content">
+
+
+            <div>
+
+                <a
+                    href="/"
+                    class="logo"
+                >
+                    Gubiter
+                </a>
+
+
+                <p>
+                    A platform for discovering creators
+                    and videos.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="container copyright">
+
+            <p>
+                © 2026 Gubiter.
+                All rights reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="/static/js/app.js"></script>
+
+
+</body>
+
+</html>

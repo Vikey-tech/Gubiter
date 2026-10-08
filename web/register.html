@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create Account - Gubiter</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a
+                href="/"
+                class="logo"
+            >
+                Gubiter
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="/">
+                    Home
+                </a>
+
+                <a href="/#popular">
+                    Popular
+                </a>
+
+                <a href="/#creators">
+                    Creators
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <!-- Theme Picker -->
+
+                <div class="theme-picker">
+
+                    <button
+                        id="themeButton"
+                        class="theme-button"
+                        aria-label="Change theme"
+                    >
+                        🎨 Theme
+                    </button>
+
+
+                    <div
+                        id="themeMenu"
+                        class="theme-menu"
+                    >
+
+                        <button
+                            class="theme-option"
+                            data-theme="light"
+                        >
+                            <span
+                                class="theme-swatch light-swatch"
+                            ></span>
+
+                            Light
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="dark"
+                        >
+                            <span
+                                class="theme-swatch dark-swatch"
+                            ></span>
+
+                            Dark
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="brown"
+                        >
+                            <span
+                                class="theme-swatch brown-swatch"
+                            ></span>
+
+                            Dark Brown
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="blue"
+                        >
+                            <span
+                                class="theme-swatch blue-swatch"
+                            ></span>
+
+                            Dark Blue
+                        </button>
+
+
+                        <button
+                            class="theme-option"
+                            data-theme="oxblood"
+                        >
+                            <span
+                                class="theme-swatch oxblood-swatch"
+                            ></span>
+
+                            Dark Oxblood
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="/register.html"
+                    class="register-btn"
+                >
+                    Create Account
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Registration -->
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+
+            <div class="auth-header">
+
+                <p class="section-label">
+                    JOIN GUBITER
+                </p>
+
+                <h1>
+                    Create your account
+                </h1>
+
+                <p>
+                    Join Gubiter and discover creators,
+                    videos and communities.
+                </p>
+
+            </div>
+
+
+            <form
+                id="registerForm"
+                class="auth-form"
+            >
+
+
+                <!-- Username -->
+
+                <div class="form-group">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Choose a username"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Confirm Password -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Enter your password again"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Account Type -->
+
+                <div class="form-group">
+
+                    <label for="accountType">
+                        Account type
+                    </label>
+
+                    <select
+                        id="accountType"
+                        name="accountType"
+                    >
+
+                        <option value="user">
+                            Normal User
+                        </option>
+
+                        <option value="creator">
+                            Creator
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Terms -->
+
+                <div class="terms-group">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span>
+                            I agree to the Gubiter
+                            Terms and Privacy Policy.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Create Account
+                </button>
+
+
+                <!-- Message -->
+
+                <p
+                    id="registerMessage"
+                    class="form-message"
+                ></p>
+
+
+            </form>
+
+
+            <div class="auth-footer">
+
+                <p>
+                    Already have an account?
+                </p>
+
+                <a href="/login.html">
+                    Login
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a
+                    href="/"
+                    class="logo"
+                >
+                    Gubiter
+                </a>
+
+                <p>
+                    A platform for discovering creators
+                    and videos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container copyright">
+
+            <p>
+                © 2026 Gubiter.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
