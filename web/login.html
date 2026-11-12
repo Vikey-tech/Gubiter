@@ -216,6 +216,7 @@
 
             <form
                 id="loginForm"
+                method="post" action="/api/auth/unavailable"
                 class="auth-form"
             >
 
@@ -225,15 +226,15 @@
                 <div class="form-group">
 
                     <label for="loginIdentifier">
-                        Email or Username
+                        Email address
                     </label>
 
 
                     <input
-                        type="text"
+                        type="email"
                         id="loginIdentifier"
                         name="loginIdentifier"
-                        placeholder="Enter your email or username"
+                        placeholder="you@example.com"
                         autocomplete="username"
                         required
                     >
@@ -264,7 +265,11 @@
 
 
 
-                <!-- Remember / Forgot -->
+                <div class="form-group" id="recoveryConfirmGroup" hidden>
+<label for="recoveryConfirm">Confirm new password</label>
+<input type="password" id="recoveryConfirm" name="recoveryConfirm" autocomplete="new-password" minlength="8">
+</div>
+<!-- Remember / Forgot -->
 
                 <div class="login-options">
 
@@ -412,6 +417,9 @@
     <!-- JavaScript -->
 
     <script src="/static/js/app.js"></script>
+    <script src="/static/vendor/supabase.js"></script>
+    <script src="/static/js/supabase-config.js"></script>
+    <script src="/static/js/auth.js"></script>
 
 
 </body>

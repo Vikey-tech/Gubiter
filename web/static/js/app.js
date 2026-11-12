@@ -119,3 +119,16 @@ if (savedTheme) {
     );
 
 }
+if (themeButton && themeMenu) {
+    themeButton.setAttribute('aria-controls', 'themeMenu');
+    themeButton.setAttribute('aria-expanded', 'false');
+    new MutationObserver(() => {
+        themeButton.setAttribute('aria-expanded', String(themeMenu.classList.contains('open')));
+    }).observe(themeMenu, { attributes: true, attributeFilter: ['class'] });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && themeMenu.classList.contains('open')) {
+            themeMenu.classList.remove('open');
+            themeButton.focus();
+        }
+    });
+}
